@@ -1,0 +1,33 @@
+
+-- Inizio del programma finale1.py --
+
+Il file obama.txt e' lungo 25396.0 tokens
+Il file romney.txt e' lungo 23130.0 tokens
+
+-------
+
+La lunghezza media delle frasi del file obama.txt e' pari a:  19.8716744914
+La lunghezza media delle frasi del file romney.txt e' pari a:  18.5634028892
+
+-------
+
+Il file obama.txt ha un vocabolario che conta 3068 type
+Il file romney.txt ha un vocabolario che conta 3471 type
+
+-------
+
+Il corpus (primi 1000 token) del file obama.txt ha una ricchezza lessicale, misurata in TTR, pari a ---> 0.307
+Il corpus (primi 1000 token) del file romney.txt ha una ricchezza lessicale, misurata in TTR, pari a ---> 0.388
+
+-------
+
+Il rapporto Sostantivi/Verbi del file obama.txt e' pari a ---> 2.75093984962
+Il rapporto Sostantivi/Verbi del file romney.txt e' pari a ---> 2.76923076923
+
+-------
+
+La densita' lessicale del file obama.txt corrisponde a ---> 0.273297062024
+La densita' lessicale del file romney.txt corrisponde a ---> 0.286589158413
+
+-- Fine del programma finale1.py --
+

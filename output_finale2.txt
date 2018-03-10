@@ -1,0 +1,608 @@
+
+-- Inizio del programma finale2.py --
+
+Stampo i primi venti token del file obama.txt con relativa frequenza:
+
+	. -----frequenza: 1190
+	, -----frequenza: 1144
+	the -----frequenza: 981
+	to -----frequenza: 786
+	and -----frequenza: 590
+	of -----frequenza: 575
+	that -----frequenza: 519
+	I -----frequenza: 423
+	a -----frequenza: 390
+	in -----frequenza: 311
+	we -----frequenza: 282
+	you -----frequenza: 272
+	for -----frequenza: 249
+	's -----frequenza: 241
+	-- -----frequenza: 233
+	is -----frequenza: 232
+	And -----frequenza: 199
+	our -----frequenza: 186
+	have -----frequenza: 173
+	on -----frequenza: 173
+None
+
+Stampo i primi venti token del file romney.txt con relativa frequenza:
+
+	. -----frequenza: 1216
+	the -----frequenza: 988
+	, -----frequenza: 979
+	and -----frequenza: 673
+	to -----frequenza: 628
+	of -----frequenza: 531
+	a -----frequenza: 374
+	that -----frequenza: 335
+	I -----frequenza: 307
+	in -----frequenza: 291
+	is -----frequenza: 267
+	will -----frequenza: 245
+	our -----frequenza: 242
+	for -----frequenza: 210
+	we -----frequenza: 207
+	have -----frequenza: 162
+	's -----frequenza: 151
+	it -----frequenza: 149
+	America -----frequenza: 146
+	are -----frequenza: 135
+None
+
+-------
+
+Stampo i primi dieci PoS (Part-of-Speech) del file obama.txt con relativa frequenza:
+
+	NN -----frequenza: 2927
+	IN -----frequenza: 2723
+	DT -----frequenza: 2150
+	NNP -----frequenza: 1877
+	PRP -----frequenza: 1728
+	. -----frequenza: 1277
+	NNS -----frequenza: 1217
+	JJ -----frequenza: 1185
+	, -----frequenza: 1144
+	RB -----frequenza: 1103
+None
+
+Stampo i primi dieci PoS (Part-of-Speech) del file romney.txt con relativa frequenza:
+
+	NN -----frequenza: 2916
+	IN -----frequenza: 2389
+	DT -----frequenza: 1986
+	PRP -----frequenza: 1398
+	NNS -----frequenza: 1383
+	. -----frequenza: 1250
+	NNP -----frequenza: 1209
+	JJ -----frequenza: 1194
+	VB -----frequenza: 1053
+	, -----frequenza: 979
+None
+
+-------
+
+Stampa i primi dieci bigrammi del file obama.txt ,composti da Aggettivi e Sostantivi con frequenza maggiore di due e ordinati in base alla frequenza decrescente, con relativa frequenza:
+
+	 bigramma --> (((u'national', 'JJ'), (u'security', 'NN')), 15)
+	 bigramma --> (((u'al', 'JJ'), (u'Qaeda', 'NNP')), 9)
+	 bigramma --> (((u'young', 'JJ'), (u'people', 'NNS')), 9)
+	 bigramma --> (((u'military', 'JJ'), (u'families', 'NNS')), 8)
+	 bigramma --> (((u'congressional', 'JJ'), (u'action', 'NN')), 6)
+	 bigramma --> (((u'comprehensive', 'JJ'), (u'immigration', 'NN')), 6)
+	 bigramma --> (((u'military', 'JJ'), (u'kids', 'NNS')), 6)
+	 bigramma --> (((u'few', 'JJ'), (u'words', 'NNS')), 5)
+	 bigramma --> (((u'military-style', 'JJ'), (u'assault', 'NN')), 5)
+	 bigramma --> (((u'moral', 'JJ'), (u'obligation', 'NN')), 4)
+
+Stampa i primi dieci bigrammi del file romney.txt ,composti da Aggettivi e Sostantivi con frequenza maggiore di due e ordinati in base alla frequenza decrescente, con relativa frequenza:
+
+	 bigramma --> (((u'small', 'JJ'), (u'business', 'NN')), 16)
+	 bigramma --> (((u'free', 'JJ'), (u'enterprise', 'NN')), 10)
+	 bigramma --> (((u'real', 'JJ'), (u'change', 'NN')), 9)
+	 bigramma --> (((u'take-home', 'JJ'), (u'pay', 'NN')), 7)
+	 bigramma --> (((u'balanced', 'JJ'), (u'budget', 'NN')), 7)
+	 bigramma --> (((u'private', 'JJ'), (u'sector', 'NN')), 6)
+	 bigramma --> (((u'foreign', 'JJ'), (u'aid', 'NN')), 5)
+	 bigramma --> (((u'fellow', 'JJ'), (u'citizens', 'NNS')), 5)
+	 bigramma --> (((u'nuclear', 'JJ'), (u'weapons', 'NNS')), 5)
+	 bigramma --> (((u'national', 'JJ'), (u'security', 'NN')), 4)
+
+-------
+
+Stampa i primi dieci bigrammi del file obama.txt ,composti da Aggettivi e Sostantivi con frequenza maggiore di due e ordinati in base alla forza associativa (calcolata in termini di Local Mutual Information), con relativa forza associativa:
+
+	 bigramma --> (((u'national', 'JJ'), (u'security', 'NN')), 172.20465853711616)
+	 bigramma --> (((u'al', 'JJ'), (u'Qaeda', 'NNP')), 110.18944234656203)
+	 bigramma --> (((u'young', 'JJ'), (u'people', 'NNS')), 97.879465199918329)
+	 bigramma --> (((u'military', 'JJ'), (u'families', 'NNS')), 86.811447615117714)
+	 bigramma --> (((u'comprehensive', 'JJ'), (u'immigration', 'NN')), 72.056299869995712)
+	 bigramma --> (((u'congressional', 'JJ'), (u'action', 'NN')), 71.233586731841271)
+	 bigramma --> (((u'military', 'JJ'), (u'kids', 'NNS')), 67.196125531860119)
+	 bigramma --> (((u'military-style', 'JJ'), (u'assault', 'NN')), 63.029207256124671)
+	 bigramma --> (((u'few', 'JJ'), (u'words', 'NNS')), 60.702302831282253)
+	 bigramma --> (((u'moral', 'JJ'), (u'obligation', 'NN')), 52.470961959025473)
+
+Stampa i primi dieci bigrammi del file romney.txt ,composti da Aggettivi e Sostantivi con frequenza maggiore di due e ordinati in base alla forza associativa (calcolata in termini di Local Mutual Information), con relativa forza associativa:
+
+	 bigramma --> (((u'small', 'JJ'), (u'business', 'NN')), 160.70015484929039)
+	 bigramma --> (((u'free', 'JJ'), (u'enterprise', 'NN')), 111.61542692642311)
+	 bigramma --> (((u'real', 'JJ'), (u'change', 'NN')), 98.954795744949323)
+	 bigramma --> (((u'balanced', 'JJ'), (u'budget', 'NN')), 85.04688039472272)
+	 bigramma --> (((u'take-home', 'JJ'), (u'pay', 'NN')), 84.998444497144177)
+	 bigramma --> (((u'private', 'JJ'), (u'sector', 'NN')), 75.121186332141818)
+	 bigramma --> (((u'fellow', 'JJ'), (u'citizens', 'NNS')), 62.075077426657899)
+	 bigramma --> (((u'nuclear', 'JJ'), (u'weapons', 'NNS')), 61.213318732473645)
+	 bigramma --> (((u'foreign', 'JJ'), (u'aid', 'NN')), 60.43272272288722)
+	 bigramma --> (((u'full', 'JJ'), (u'advantage', 'NN')), 52.702198202544764)
+
+-------
+
+	 La frase ---> Finally, and most importantly, to my wife Kathy; to my children Kyle, Jaclyn, Kelly; to my parents in New Jersey, a shout-out -- (laughter) -- Owen, who is 92 and my mom, Dorothy, who is 91; my brother Tom and my sister Kathleen and my Jersey roots:  I could not be where I am today without their love, their patience, their understanding and their support. <--- del file obama.txt , ha la probabilita massima, che corrisponde a: 1.82332965654e+174
+
+	 La frase ---> Time and again, it has been the Guardsman's hand that has lifted a child from rising waters, that has rescued a family from a hurricane's fury, and that has fed and clothed a fellow American whose home and possessions have been lost to nature's devastation. <--- del file romney.txt , ha la probabilita massima, che corrisponde a: 4.49393494367e+104
+
+-------
+
+
+Lista dei nomi propri di persona (PERSON) del file obama.txt ordinati per frequenza:
+
+	 La parola:  MR. ha frequenza ---> 57
+	 La parola:  John ha frequenza ---> 19
+	 La parola:  Chuck ha frequenza ---> 15
+	 La parola:  Mr. ha frequenza ---> 12
+	 La parola:  Tim ha frequenza ---> 11
+	 La parola:  John Brennan ha frequenza ---> 9
+	 La parola:  MR. CARNEY ha frequenza ---> 9
+	 La parola:  Morsi ha frequenza ---> 9
+	 La parola:  Joe ha frequenza ---> 8
+	 La parola:  Barack Obama ha frequenza ---> 7
+	 La parola:  Jack ha frequenza ---> 7
+	 La parola:  Chuck Hagel ha frequenza ---> 6
+	 La parola:  Jay ha frequenza ---> 6
+	 La parola:  Jill ha frequenza ---> 6
+	 La parola:  Joe Biden ha frequenza ---> 6
+	 La parola:  Carole ha frequenza ---> 5
+	 La parola:  Hagel ha frequenza ---> 5
+	 La parola:  Lance Armstrong ha frequenza ---> 4
+	 La parola:  Leon Panetta ha frequenza ---> 4
+	 La parola:  Colin ha frequenza ---> 3
+	 La parola:  Grace ha frequenza ---> 3
+	 La parola:  Julia ha frequenza ---> 3
+	 La parola:  Leon ha frequenza ---> 3
+	 La parola:  Michael Morell ha frequenza ---> 3
+	 La parola:  Michelle ha frequenza ---> 3
+	 La parola:  Qaeda ha frequenza ---> 3
+	 La parola:  Senator Rubio ha frequenza ---> 3
+	 La parola:  Arabian Peninsula ha frequenza ---> 2
+	 La parola:  Barack ha frequenza ---> 2
+	 La parola:  Biden ha frequenza ---> 2
+	 La parola:  Clinton ha frequenza ---> 2
+	 La parola:  Disease Control ha frequenza ---> 2
+	 La parola:  Grant ha frequenza ---> 2
+	 La parola:  Harry Reid ha frequenza ---> 2
+	 La parola:  Hello ha frequenza ---> 2
+	 La parola:  Hinna ha frequenza ---> 2
+	 La parola:  Jack Lew ha frequenza ---> 2
+	 La parola:  Jackie ha frequenza ---> 2
+	 La parola:  Kathy ha frequenza ---> 2
+	 La parola:  Katy Perry ha frequenza ---> 2
+	 La parola:  Michael ha frequenza ---> 2
+	 La parola:  Mike ha frequenza ---> 2
+	 La parola:  Mike Morell ha frequenza ---> 2
+	 La parola:  Robinson ha frequenza ---> 2
+	 La parola:  Ronald Reagan ha frequenza ---> 2
+	 La parola:  Rubio ha frequenza ---> 2
+	 La parola:  Stevie Wonder ha frequenza ---> 2
+	 La parola:  Tim Geithner ha frequenza ---> 2
+	 La parola:  ha frequenza ---> 1
+	 La parola:  Air Force Base ha frequenza ---> 1
+	 La parola:  Andrew Jackson ha frequenza ---> 1
+	 La parola:  Beau ha frequenza ---> 1
+	 La parola:  Bibles ha frequenza ---> 1
+	 La parola:  Bill ha frequenza ---> 1
+	 La parola:  Board ha frequenza ---> 1
+	 La parola:  Bob Gates ha frequenza ---> 1
+	 La parola:  Brennan ha frequenza ---> 1
+	 La parola:  Burrville Elementary School ha frequenza ---> 1
+	 La parola:  Camp Pendleton ha frequenza ---> 1
+	 La parola:  Charles Grassley ha frequenza ---> 1
+	 La parola:  Chris ha frequenza ---> 1
+	 La parola:  Coast Guard Air ha frequenza ---> 1
+	 La parola:  Colin Goddard ha frequenza ---> 1
+	 La parola:  Danny ha frequenza ---> 1
+	 La parola:  Dave Boren ha frequenza ---> 1
+	 La parola:  David ha frequenza ---> 1
+	 La parola:  Denis ha frequenza ---> 1
+	 La parola:  Director ha frequenza ---> 1
+	 La parola:  Donovan ha frequenza ---> 1
+	 La parola:  Dorothy ha frequenza ---> 1
+	 La parola:  Duncan ha frequenza ---> 1
+	 La parola:  Egypt ha frequenza ---> 1
+	 La parola:  Elaine Kagan ha frequenza ---> 1
+	 La parola:  First Lady ha frequenza ---> 1
+	 La parola:  First Lady Michelle Obama ha frequenza ---> 1
+	 La parola:  Geithner ha frequenza ---> 1
+	 La parola:  Glee ha frequenza ---> 1
+	 La parola:  Grace McDonald ha frequenza ---> 1
+	 La parola:  Hillary Clinton ha frequenza ---> 1
+	 La parola:  Hinna Zeejah ha frequenza ---> 1
+	 La parola:  Hollande ha frequenza ---> 1
+	 La parola:  Hunter ha frequenza ---> 1
+	 La parola:  Jews ha frequenza ---> 1
+	 La parola:  Jill Biden ha frequenza ---> 1
+	 La parola:  Jim Clapper ha frequenza ---> 1
+	 La parola:  Joining Forces ha frequenza ---> 1
+	 La parola:  Joint Base Pearl ha frequenza ---> 1
+	 La parola:  Julia Stokes ha frequenza ---> 1
+	 La parola:  Kathleen ha frequenza ---> 1
+	 La parola:  Kyle ha frequenza ---> 1
+	 La parola:  Laden ha frequenza ---> 1
+	 La parola:  Lady Michelle Obama ha frequenza ---> 1
+	 La parola:  Lee Hall Elementary ha frequenza ---> 1
+	 La parola:  Lew ha frequenza ---> 1
+	 La parola:  Lincoln ha frequenza ---> 1
+	 La parola:  Lynn McDonald ha frequenza ---> 1
+	 La parola:  MR. LEW ha frequenza ---> 1
+	 La parola:  Make ha frequenza ---> 1
+	 La parola:  Mali ha frequenza ---> 1
+	 La parola:  Marco Rubio ha frequenza ---> 1
+	 La parola:  Martha ha frequenza ---> 1
+	 La parola:  Martin Luther ha frequenza ---> 1
+	 La parola:  Mary Beth ha frequenza ---> 1
+	 La parola:  Mich ha frequenza ---> 1
+	 La parola:  Michelle Obama ha frequenza ---> 1
+	 La parola:  Michigan ha frequenza ---> 1
+	 La parola:  Mr. Donilon ha frequenza ---> 1
+	 La parola:  Mr. Leon Panetta ha frequenza ---> 1
+	 La parola:  Mr. Stevie Wonder ha frequenza ---> 1
+	 La parola:  Mr. Tim Geithner ha frequenza ---> 1
+	 La parola:  Nancy Pelosi ha frequenza ---> 1
+	 La parola:  Natalie ha frequenza ---> 1
+	 La parola:  Naval Air ha frequenza ---> 1
+	 La parola:  Nick Cannon ha frequenza ---> 1
+	 La parola:  Obama ha frequenza ---> 1
+	 La parola:  Olivier ha frequenza ---> 1
+	 La parola:  Osama ha frequenza ---> 1
+	 La parola:  Owen ha frequenza ---> 1
+	 La parola:  Panetta ha frequenza ---> 1
+	 La parola:  Peter ha frequenza ---> 1
+	 La parola:  Rachel ha frequenza ---> 1
+	 La parola:  Reagan ha frequenza ---> 1
+	 La parola:  Roberts ha frequenza ---> 1
+	 La parola:  Saeed Abedini ha frequenza ---> 1
+	 La parola:  Sandy ha frequenza ---> 1
+	 La parola:  Sandy Hook ha frequenza ---> 1
+	 La parola:  Sandy Hook Elementary ha frequenza ---> 1
+	 La parola:  Sandy Hook Elementary School ha frequenza ---> 1
+	 La parola:  Schumer ha frequenza ---> 1
+	 La parola:  Sebelius ha frequenza ---> 1
+	 La parola:  Senator Hagel ha frequenza ---> 1
+	 La parola:  Senator Marco Rubio ha frequenza ---> 1
+	 La parola:  Senator Schumer ha frequenza ---> 1
+	 La parola:  Senior ha frequenza ---> 1
+	 La parola:  Sonya Sotomayor ha frequenza ---> 1
+	 La parola:  Sorry ha frequenza ---> 1
+	 La parola:  Speaker O'Neill ha frequenza ---> 1
+	 La parola:  Teja Goode ha frequenza ---> 1
+	 La parola:  Tip ha frequenza ---> 1
+	 La parola:  Tobacco ha frequenza ---> 1
+	 La parola:  Todd Jones ha frequenza ---> 1
+	 La parola:  Tom ha frequenza ---> 1
+	 La parola:  Tui ha frequenza ---> 1
+	 La parola:  Tui Roper ha frequenza ---> 1
+	 La parola:  Usher ha frequenza ---> 1
+	 La parola:  Vineyard ha frequenza ---> 1
+	 La parola:  Wisconsin ha frequenza ---> 1
+	 La parola:  Ziller ha frequenza ---> 1
+
+Lista dei nomi propri di luogo (GPE) del file obama.txt ordinati per frequenza:
+
+	 La parola:  ha frequenza ---> 44
+	 La parola:  American ha frequenza ---> 31
+	 La parola:  America ha frequenza ---> 16
+	 La parola:  Mali ha frequenza ---> 12
+	 La parola:  Washington ha frequenza ---> 12
+	 La parola:  Iran ha frequenza ---> 10
+	 La parola:  Newtown ha frequenza ---> 9
+	 La parola:  Afghanistan ha frequenza ---> 8
+	 La parola:  Israel ha frequenza ---> 8
+	 La parola:  U.S. ha frequenza ---> 8
+	 La parola:  United ha frequenza ---> 8
+	 La parola:  Egypt ha frequenza ---> 7
+	 La parola:  Defense ha frequenza ---> 5
+	 La parola:  Iraq ha frequenza ---> 5
+	 La parola:  Russia ha frequenza ---> 5
+	 La parola:  Again ha frequenza ---> 4
+	 La parola:  Let ha frequenza ---> 4
+	 La parola:  Aurora ha frequenza ---> 3
+	 La parola:  France ha frequenza ---> 3
+	 La parola:  Middle East ha frequenza ---> 3
+	 La parola:  Somalia ha frequenza ---> 3
+	 La parola:  Well ha frequenza ---> 3
+	 La parola:  Chicago ha frequenza ---> 2
+	 La parola:  Colin ha frequenza ---> 2
+	 La parola:  Jack ha frequenza ---> 2
+	 La parola:  Jackie ha frequenza ---> 2
+	 La parola:  Jaelen ha frequenza ---> 2
+	 La parola:  New Jersey ha frequenza ---> 2
+	 La parola:  New York ha frequenza ---> 2
+	 La parola:  North Africa ha frequenza ---> 2
+	 La parola:  Ruth ha frequenza ---> 2
+	 La parola:  Somali ha frequenza ---> 2
+	 La parola:  Soviet Union ha frequenza ---> 2
+	 La parola:  Sylvia ha frequenza ---> 2
+	 La parola:  Tomorrow ha frequenza ---> 2
+	 La parola:  Alcohol ha frequenza ---> 1
+	 La parola:  Allegiance ha frequenza ---> 1
+	 La parola:  Allyn ha frequenza ---> 1
+	 La parola:  Andrei ha frequenza ---> 1
+	 La parola:  Anyway ha frequenza ---> 1
+	 La parola:  Ari ha frequenza ---> 1
+	 La parola:  Bank ha frequenza ---> 1
+	 La parola:  Beau ha frequenza ---> 1
+	 La parola:  Brooklyn ha frequenza ---> 1
+	 La parola:  Brotherhood ha frequenza ---> 1
+	 La parola:  California ha frequenza ---> 1
+	 La parola:  Capitol ha frequenza ---> 1
+	 La parola:  Cheryl ha frequenza ---> 1
+	 La parola:  Children ha frequenza ---> 1
+	 La parola:  Chris ha frequenza ---> 1
+	 La parola:  Clackamas ha frequenza ---> 1
+	 La parola:  Colorado ha frequenza ---> 1
+	 La parola:  Energy ha frequenza ---> 1
+	 La parola:  Europe ha frequenza ---> 1
+	 La parola:  Fame ha frequenza ---> 1
+	 La parola:  First ha frequenza ---> 1
+	 La parola:  French ha frequenza ---> 1
+	 La parola:  Good ha frequenza ---> 1
+	 La parola:  Grant ha frequenza ---> 1
+	 La parola:  Hagel ha frequenza ---> 1
+	 La parola:  Hello ha frequenza ---> 1
+	 La parola:  Hi ha frequenza ---> 1
+	 La parola:  Hinna ha frequenza ---> 1
+	 La parola:  Homeland Security ha frequenza ---> 1
+	 La parola:  Jaclyn ha frequenza ---> 1
+	 La parola:  Jay ha frequenza ---> 1
+	 La parola:  Jersey ha frequenza ---> 1
+	 La parola:  Jessica ha frequenza ---> 1
+	 La parola:  Julia ha frequenza ---> 1
+	 La parola:  Kelly ha frequenza ---> 1
+	 La parola:  Langley ha frequenza ---> 1
+	 La parola:  Leon ha frequenza ---> 1
+	 La parola:  Libya ha frequenza ---> 1
+	 La parola:  Lilibet ha frequenza ---> 1
+	 La parola:  Major ha frequenza ---> 1
+	 La parola:  Make ha frequenza ---> 1
+	 La parola:  Michael ha frequenza ---> 1
+	 La parola:  Michelle ha frequenza ---> 1
+	 La parola:  Oak Creek ha frequenza ---> 1
+	 La parola:  Okay ha frequenza ---> 1
+	 La parola:  Olivier ha frequenza ---> 1
+	 La parola:  Oregon ha frequenza ---> 1
+	 La parola:  Pennsylvania ha frequenza ---> 1
+	 La parola:  Postal ha frequenza ---> 1
+	 La parola:  Queens ha frequenza ---> 1
+	 La parola:  Rachel ha frequenza ---> 1
+	 La parola:  Republicans ha frequenza ---> 1
+	 La parola:  Residence ha frequenza ---> 1
+	 La parola:  Russians ha frequenza ---> 1
+	 La parola:  Service ha frequenza ---> 1
+	 La parola:  Shoshi ha frequenza ---> 1
+	 La parola:  Sikhs ha frequenza ---> 1
+	 La parola:  Source ha frequenza ---> 1
+	 La parola:  Tim ha frequenza ---> 1
+	 La parola:  United Army ha frequenza ---> 1
+	 La parola:  Virginia ha frequenza ---> 1
+	 La parola:  Wave ha frequenza ---> 1
+	 La parola:  Welcome ha frequenza ---> 1
+	 La parola:  Yemen ha frequenza ---> 1
+	 La parola:  Zahava ha frequenza ---> 1
+None
+
+------------------------------------------------------
+
+
+Lista dei nomi propri di persona (PERSON) del file romney.txt ordinati per frequenza:
+
+	 La parola:  Obama ha frequenza ---> 41
+	 La parola:  Obamacare ha frequenza ---> 10
+	 La parola:  Paul ha frequenza ---> 8
+	 La parola:  Ann ha frequenza ---> 7
+	 La parola:  Paul Ryan ha frequenza ---> 7
+	 La parola:  Mr. ha frequenza ---> 5
+	 La parola:  Latin America ha frequenza ---> 4
+	 La parola:  Martha ha frequenza ---> 4
+	 La parola:  America ha frequenza ---> 3
+	 La parola:  Barack Obama ha frequenza ---> 3
+	 La parola:  Bill Clinton ha frequenza ---> 3
+	 La parola:  Neil Armstrong ha frequenza ---> 3
+	 La parola:  ha frequenza ---> 2
+	 La parola:  Begin ha frequenza ---> 2
+	 La parola:  Bright Horizons ha frequenza ---> 2
+	 La parola:  Clinton ha frequenza ---> 2
+	 La parola:  Dad ha frequenza ---> 2
+	 La parola:  Laden ha frequenza ---> 2
+	 La parola:  North American ha frequenza ---> 2
+	 La parola:  Ohio ha frequenza ---> 2
+	 La parola:  Staples ha frequenza ---> 2
+	 La parola:  Steel Dynamics ha frequenza ---> 2
+	 La parola:  Susana Martinez ha frequenza ---> 2
+	 La parola:  Trade Promotion Authority ha frequenza ---> 2
+	 La parola:  Always ha frequenza ---> 1
+	 La parola:  Amtrak ha frequenza ---> 1
+	 La parola:  Ann Romney ha frequenza ---> 1
+	 La parola:  Anwar Sadat ha frequenza ---> 1
+	 La parola:  Arab Spring ha frequenza ---> 1
+	 La parola:  Arthur Brooks ha frequenza ---> 1
+	 La parola:  Assad ha frequenza ---> 1
+	 La parola:  Bain Capital ha frequenza ---> 1
+	 La parola:  Benjamin Netanyahu ha frequenza ---> 1
+	 La parola:  Bouazizi ha frequenza ---> 1
+	 La parola:  Brian Sandoval ha frequenza ---> 1
+	 La parola:  Bush ha frequenza ---> 1
+	 La parola:  Castro ha frequenza ---> 1
+	 La parola:  Change ha frequenza ---> 1
+	 La parola:  Clinton Global Initiative ha frequenza ---> 1
+	 La parola:  Deere ha frequenza ---> 1
+	 La parola:  Dorene Dominguez ha frequenza ---> 1
+	 La parola:  Except Jimmy Carter ha frequenza ---> 1
+	 La parola:  First Lady Michelle Obama ha frequenza ---> 1
+	 La parola:  Fiscal Sanity Act ha frequenza ---> 1
+	 La parola:  God ha frequenza ---> 1
+	 La parola:  God Bless America ha frequenza ---> 1
+	 La parola:  Governor Martinez ha frequenza ---> 1
+	 La parola:  Guardsmen ha frequenza ---> 1
+	 La parola:  Haiti ha frequenza ---> 1
+	 La parola:  Hamas ha frequenza ---> 1
+	 La parola:  Harry Truman ha frequenza ---> 1
+	 La parola:  Health ha frequenza ---> 1
+	 La parola:  Hector ha frequenza ---> 1
+	 La parola:  Hispanics ha frequenza ---> 1
+	 La parola:  Hurricane Isaac ha frequenza ---> 1
+	 La parola:  Isaac ha frequenza ---> 1
+	 La parola:  Janna ha frequenza ---> 1
+	 La parola:  Jihadists ha frequenza ---> 1
+	 La parola:  Jobs ha frequenza ---> 1
+	 La parola:  John ha frequenza ---> 1
+	 La parola:  John Deere ha frequenza ---> 1
+	 La parola:  John Deere Company ha frequenza ---> 1
+	 La parola:  John Kasich ha frequenza ---> 1
+	 La parola:  Johnson ha frequenza ---> 1
+	 La parola:  Kasich ha frequenza ---> 1
+	 La parola:  Katrina ha frequenza ---> 1
+	 La parola:  Kennedy ha frequenza ---> 1
+	 La parola:  Libya ha frequenza ---> 1
+	 La parola:  Life ha frequenza ---> 1
+	 La parola:  Little League ha frequenza ---> 1
+	 La parola:  Luis Fortuno ha frequenza ---> 1
+	 La parola:  Mayor Barkat ha frequenza ---> 1
+	 La parola:  Menachem Begin ha frequenza ---> 1
+	 La parola:  Mr. Putin ha frequenza ---> 1
+	 La parola:  Muhammed Bouazizi ha frequenza ---> 1
+	 La parola:  Nikki Haley ha frequenza ---> 1
+	 La parola:  Osama ha frequenza ---> 1
+	 La parola:  Paul Johnson ha frequenza ---> 1
+	 La parola:  Putin ha frequenza ---> 1
+	 La parola:  Ready ha frequenza ---> 1
+	 La parola:  Rhoda ha frequenza ---> 1
+	 La parola:  Rhoda Elliott ha frequenza ---> 1
+	 La parola:  Rick Warren ha frequenza ---> 1
+	 La parola:  Rob Portman ha frequenza ---> 1
+	 La parola:  Saddam Hussein ha frequenza ---> 1
+	 La parola:  Seal Team Six ha frequenza ---> 1
+	 La parola:  Senator Kelly Ayotte ha frequenza ---> 1
+	 La parola:  Senator Marco Rubio ha frequenza ---> 1
+	 La parola:  Senator Portman ha frequenza ---> 1
+	 La parola:  Sesame Street ha frequenza ---> 1
+	 La parola:  Steve ha frequenza ---> 1
+	 La parola:  Ted Cruz ha frequenza ---> 1
+	 La parola:  Tesla ha frequenza ---> 1
+	 La parola:  Tisha ha frequenza ---> 1
+	 La parola:  Truman ha frequenza ---> 1
+	 La parola:  Vavala ha frequenza ---> 1
+	 La parola:  Wisconsin ha frequenza ---> 1
+
+Lista dei nomi propri di luogo (GPE) del file romney.txt ordinati per frequenza:
+
+	 La parola:  America ha frequenza ---> 134
+	 La parola:  ha frequenza ---> 57
+	 La parola:  American ha frequenza ---> 38
+	 La parola:  Israel ha frequenza ---> 31
+	 La parola:  Iran ha frequenza ---> 18
+	 La parola:  United ha frequenza ---> 16
+	 La parola:  China ha frequenza ---> 11
+	 La parola:  Washington ha frequenza ---> 9
+	 La parola:  Afghanistan ha frequenza ---> 7
+	 La parola:  Middle East ha frequenza ---> 7
+	 La parola:  Iraq ha frequenza ---> 6
+	 La parola:  Massachusetts ha frequenza ---> 6
+	 La parola:  Israeli ha frequenza ---> 5
+	 La parola:  Obamacare ha frequenza ---> 5
+	 La parola:  Free ha frequenza ---> 4
+	 La parola:  Freedom ha frequenza ---> 4
+	 La parola:  New ha frequenza ---> 4
+	 La parola:  U.S. ha frequenza ---> 4
+	 La parola:  Virginia ha frequenza ---> 4
+	 La parola:  Canada ha frequenza ---> 3
+	 La parola:  First ha frequenza ---> 3
+	 La parola:  Iranian ha frequenza ---> 3
+	 La parola:  Jewish ha frequenza ---> 3
+	 La parola:  Mexico ha frequenza ---> 3
+	 La parola:  Michigan ha frequenza ---> 3
+	 La parola:  Middle ha frequenza ---> 3
+	 La parola:  Ohio ha frequenza ---> 3
+	 La parola:  Work ha frequenza ---> 3
+	 La parola:  Detroit ha frequenza ---> 2
+	 La parola:  Dorene ha frequenza ---> 2
+	 La parola:  Egypt ha frequenza ---> 2
+	 La parola:  Fifth ha frequenza ---> 2
+	 La parola:  Greece ha frequenza ---> 2
+	 La parola:  Look ha frequenza ---> 2
+	 La parola:  Medicare ha frequenza ---> 2
+	 La parola:  North America ha frequenza ---> 2
+	 La parola:  Tonight ha frequenza ---> 2
+	 La parola:  Abbottabad ha frequenza ---> 1
+	 La parola:  Abundant ha frequenza ---> 1
+	 La parola:  Afghan ha frequenza ---> 1
+	 La parola:  Africa ha frequenza ---> 1
+	 La parola:  Alexandria ha frequenza ---> 1
+	 La parola:  Americahas ha frequenza ---> 1
+	 La parola:  Americorps ha frequenza ---> 1
+	 La parola:  Bain ha frequenza ---> 1
+	 La parola:  Battery Park ha frequenza ---> 1
+	 La parola:  Candidate ha frequenza ---> 1
+	 La parola:  Castro ha frequenza ---> 1
+	 La parola:  Chicago ha frequenza ---> 1
+	 La parola:  Cristina ha frequenza ---> 1
+	 La parola:  D.C. ha frequenza ---> 1
+	 La parola:  Damascus ha frequenza ---> 1
+	 La parola:  Energy ha frequenza ---> 1
+	 La parola:  Europe ha frequenza ---> 1
+	 La parola:  Fallujah ha frequenza ---> 1
+	 La parola:  Fisker ha frequenza ---> 1
+	 La parola:  Florida ha frequenza ---> 1
+	 La parola:  God ha frequenza ---> 1
+	 La parola:  Hispanic ha frequenza ---> 1
+	 La parola:  Hollywood ha frequenza ---> 1
+	 La parola:  Hope ha frequenza ---> 1
+	 La parola:  Idle ha frequenza ---> 1
+	 La parola:  Indiana ha frequenza ---> 1
+	 La parola:  Iowa ha frequenza ---> 1
+	 La parola:  Iraqi ha frequenza ---> 1
+	 La parola:  Jerusalem ha frequenza ---> 1
+	 La parola:  Latin America ha frequenza ---> 1
+	 La parola:  Lebanon ha frequenza ---> 1
+	 La parola:  Liberty ha frequenza ---> 1
+	 La parola:  Louisiana ha frequenza ---> 1
+	 La parola:  Make ha frequenza ---> 1
+	 La parola:  Medicaid ha frequenza ---> 1
+	 La parola:  Mexican ha frequenza ---> 1
+	 La parola:  Mom ha frequenza ---> 1
+	 La parola:  New York ha frequenza ---> 1
+	 La parola:  Nor ha frequenza ---> 1
+	 La parola:  Norfolk ha frequenza ---> 1
+	 La parola:  North ha frequenza ---> 1
+	 La parola:  North Carolina ha frequenza ---> 1
+	 La parola:  Osama ha frequenza ---> 1
+	 La parola:  Poland ha frequenza ---> 1
+	 La parola:  Reagan ha frequenza ---> 1
+	 La parola:  Republicans ha frequenza ---> 1
+	 La parola:  Russia ha frequenza ---> 1
+	 La parola:  Sderot ha frequenza ---> 1
+	 La parola:  Sharia ha frequenza ---> 1
+	 La parola:  Slow ha frequenza ---> 1
+	 La parola:  South Korea ha frequenza ---> 1
+	 La parola:  St. Louis ha frequenza ---> 1
+	 La parola:  Tehran ha frequenza ---> 1
+	 La parola:  Trade ha frequenza ---> 1
+	 La parola:  Tunisia ha frequenza ---> 1
+	 La parola:  US ha frequenza ---> 1
+	 La parola:  Unconditional ha frequenza ---> 1
+	 La parola:  United Navy ha frequenza ---> 1
+	 La parola:  Waukesha ha frequenza ---> 1
+	 La parola:  Well ha frequenza ---> 1
+None
+
+-------
+-- Fine del programma finale2.py --
+
